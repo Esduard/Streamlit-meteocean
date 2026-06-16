@@ -1,0 +1,317 @@
+ # Developer Intent Document — PRD Preparation for Packaging the Streamlit App as an Executable
+
+You are my VS Code embedded coding agent. Before creating a PRD, read this document carefully and treat it as the source of truth for my developer intention.
+
+## 1. Context
+
+I have an existing Streamlit application that must be packaged as a local executable using PyInstaller.
+
+The application is a data/model-driven app. It must preserve its current behavior, interface, prediction flow, visualizations, configuration logic, and user-facing features. The packaging task is not a rewrite of the application. It is a distribution and runtime-compatibility task.
+
+The final executable should allow a user to run the Streamlit app locally without manually setting up Python, installing dependencies, or launching Streamlit from the terminal.
+
+## 2. Core Developer Intention
+
+My intention is to transform the existing Streamlit app into a local executable while preserving the app as a flexible forecasting/data-analysis tool.
+
+The executable must not become a frozen demo with hardcoded models or hardcoded data.
+
+The packaged app must still be able to read external files, especially:
+
+* model files;
+* exogenous input data;
+* configuration files, if applicable;
+* user-provided datasets;
+* future replacement model versions.
+
+The executable should act as a portable runtime for the app, not as a fixed snapshot of one experiment.
+
+## 3. Non-Negotiable Requirements
+
+The PRD must reflect the following non-negotiable requirements.
+
+### 3.1 Preserve all existing features
+
+All current Streamlit features must continue to work after packaging.
+
+This includes, where applicable:
+
+* page navigation;
+* sidebar controls;
+* model selection;
+* target variable selection;
+* forecast horizon selection;
+* file upload flows;
+* plots, tables, metrics, and downloads;
+* prediction execution;
+* validation messages;
+* error handling;
+* cache behavior;
+* any existing preprocessing or postprocessing logic.
+
+Do not remove features to make packaging easier.
+
+### 3.2 Preserve model behavior
+
+The packaged executable must not alter the model semantics.
+
+The agent must identify how models are currently loaded and used before proposing packaging changes.
+
+The PRD should explicitly cover:
+
+* where model files are expected to live;
+* how the app locates model files;
+* how missing model files are reported to the user;
+* how incompatible model files are handled;
+* whether models are selected by name, target variable, model type, or path;
+* whether the current app uses Prophet, ARIMA/SARIMAX, pickle files, joblib files, or another model format.
+
+Do not retrain models as part of this task unless the existing app already does so.
+
+### 3.3 Preserve external exogenous data support
+
+The executable must continue to support external exogenous data files.
+
+The app must be able to read files supplied after packaging, not only files bundled during build time.
+
+The PRD must define how users provide exogenous data, for example:
+
+* through a Streamlit file uploader;
+* through a configurable external folder;
+* through a path selected in the UI;
+* through a default `data/` or `resources/` folder next to the executable.
+
+The selected approach must avoid hardcoded absolute paths.
+
+### 3.4 Avoid hardcoded developer-machine paths
+
+The final packaged app must not depend on paths that only exist on my machine.
+
+Avoid patterns like:
+
+```text
+/home/eduardo/...
+C:\Users\Eduardo\...
+../../some/local/notebook/path
+```
+
+The PRD must require a path strategy based on portable runtime paths.
+
+### 3.5 Separate bundled resources from external user resources
+
+The agent must distinguish between two kinds of files:
+
+1. **Bundled internal resources**
+   Files required for the app itself to run, such as internal assets, static files, default configs, metadata, or templates.
+
+2. **External runtime resources**
+   Files the user may replace or provide after packaging, such as model files and exogenous data.
+
+Bundled resources may be handled through PyInstaller mechanisms.
+
+External runtime resources should remain outside the executable whenever they need to be replaceable.
+
+The PRD must not assume that all models and datasets should be embedded inside the `.exe`.
+
+### 3.6 The packaged app should run locally
+
+The executable should launch the Streamlit app locally.
+
+Expected behavior:
+
+* the user opens the executable;
+* the app starts a local Streamlit server;
+* the browser opens automatically or the local URL is clearly shown;
+* the app behaves like the original development version.
+
+This is not a cloud deployment task.
+
+### 3.7 The app should work without requiring Python installation by the end user
+
+The final distribution should not require the end user to manually install:
+
+* Python;
+* Streamlit;
+* project dependencies;
+* model libraries;
+* local virtual environments.
+
+The executable or distribution folder should include what is needed to run.
+
+## 4. Technical Direction to Investigate
+
+Before writing the PRD, inspect the repository and identify:
+
+* the Streamlit entrypoint file;
+* whether the app is single-page or multi-page;
+* all places where files are loaded from disk;
+* all model-loading functions;
+* all exogenous-data-loading functions;
+* all assumptions about relative paths;
+* all dependencies imported dynamically;
+* all libraries that may need PyInstaller hidden imports;
+* any config files used by Streamlit or the app;
+* whether the app uses notebooks as part of runtime, which should be avoided;
+* whether generated files are written to the project folder, temp folder, or user-selected output folder.
+
+## 5. Expected Packaging Architecture
+
+The PRD should propose a packaging architecture similar to this, unless the repository clearly suggests a better option:
+
+```text
+dist/
+  MyStreamlitApp/
+    MyStreamlitApp.exe
+    models/
+      README.md
+      example_model_files_here_or_empty
+    data/
+      README.md
+      example_exogenous_files_here_or_empty
+    config/
+      app_config.toml
+    logs/
+```
+
+The executable should be able to find folders relative to its own runtime location.
+
+The app should expose a clear user-facing way to choose or confirm:
+
+* model directory;
+* exogenous data file;
+* output directory, if applicable.
+
+## 6. PyInstaller-Specific Concerns
+
+The PRD should include PyInstaller-related requirements, but should not jump directly into implementation before documenting the product behavior.
+
+The agent should consider:
+
+* whether a launcher script is needed to start Streamlit;
+* whether a `.spec` file is needed;
+* whether Streamlit metadata, static files, or config files must be collected;
+* whether hidden imports are needed;
+* whether one-file or one-folder mode is more appropriate;
+* how to handle temporary extraction paths;
+* how to avoid confusing bundled paths with external model/data paths;
+* how to log startup errors for debugging;
+* how to validate the executable on a clean machine or clean environment.
+
+Prefer reliability over producing a tiny executable.
+
+A one-folder distribution is acceptable if it is more reliable than a single `.exe`.
+
+## 7. Runtime Path Policy
+
+The PRD must require a clear runtime path policy.
+
+The app should use robust path handling with `pathlib`.
+
+The app should avoid assuming that the current working directory is the project root.
+
+The app should support both modes:
+
+1. running from source during development;
+2. running from a PyInstaller bundle.
+
+The PRD should require a small path utility module if the repository does not already have one.
+
+That path utility should distinguish between:
+
+* source root;
+* bundled internal resource path;
+* external runtime directory;
+* model directory;
+* exogenous data directory;
+* logs directory.
+
+## 8. User Experience Requirements
+
+The packaged app should be understandable to a non-developer user.
+
+The PRD should require:
+
+* clear startup behavior;
+* clear error messages when model files are missing;
+* clear error messages when exogenous data is missing or malformed;
+* visible indication of which model file is loaded;
+* visible indication of which exogenous data file is loaded;
+* validation of required columns in exogenous datasets;
+* preservation of all current charts and outputs;
+* no terminal-only failure modes for normal user mistakes.
+
+## 9. Testing and Acceptance Criteria
+
+The PRD must include acceptance criteria.
+
+At minimum, the packaged executable is acceptable only if:
+
+* it starts successfully on a clean environment;
+* it launches the Streamlit interface locally;
+* all existing app pages/features are accessible;
+* a user can load an external model file;
+* a user can load an external exogenous data file;
+* predictions work with the external files;
+* missing files produce readable errors;
+* malformed exogenous data produces readable errors;
+* no developer-machine absolute paths are required;
+* logs are available when startup fails;
+* the development version of the app still runs normally from source.
+
+## 10. What Not To Do
+
+Do not rewrite the app from scratch.
+
+Do not remove features.
+
+Do not hardcode my local file paths.
+
+Do not force all models and datasets to be bundled into the executable.
+
+Do not require the final user to install Python manually.
+
+Do not make the packaging solution depend on notebooks.
+
+Do not silently swallow model-loading or file-loading errors.
+
+Do not change model behavior merely to simplify packaging.
+
+Do not create a PRD that only says “use PyInstaller” without specifying runtime behavior, external file handling, and acceptance criteria.
+
+## 11. PRD Deliverable Expected From You
+
+Create a PRD for this packaging task.
+
+The PRD should include:
+
+1. Title
+2. Background
+3. Problem statement
+4. Goals
+5. Non-goals
+6. User stories
+7. Functional requirements
+8. External file handling requirements
+9. Runtime path strategy
+10. PyInstaller packaging requirements
+11. UX/error-handling requirements
+12. Testing strategy
+13. Acceptance criteria
+14. Risks and mitigations
+15. Open questions, only if truly blocking
+
+Before writing the PRD, inspect the repository enough to make the PRD concrete.
+
+When repository details are unknown, mark them as:
+
+```text
+Needs repository inspection
+```
+
+Do not invent details that are not present in the codebase.
+
+## 12. Final Instruction
+
+Your job is to formalize the product and engineering intent before implementation.
+
+The PRD should make it clear that the goal is not merely to generate an executable, but to preserve the Streamlit app as a usable, configurable, local forecasting application that can continue to consume external model files and external exogenous data after packaging.

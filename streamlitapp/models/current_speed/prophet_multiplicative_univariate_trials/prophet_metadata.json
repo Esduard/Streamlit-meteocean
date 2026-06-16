@@ -1,0 +1,20 @@
+{
+  "name": "ProphetRegressor",
+  "interval_width": 0.95,
+  "yearly_seasonality": true,
+  "weekly_seasonality": true,
+  "daily_seasonality": true,
+  "seasonality_mode": "multiplicative",
+  "changepoint_prior_scale": 0.010253509690168494,
+  "seasonality_prior_scale": 7.114476009343421,
+  "yearly_fourier_order": 15,
+  "weekly_fourier_order": 6,
+  "daily_fourier_order": 2,
+  "freq": "H",
+  "first_timestamp": "2015-01-01 01:00:00",
+  "use_exogenous": false,
+  "save_dir": "iterations/20260528_101638/trials/20260528_101644/prophet_multiplicative_univariate_trials",
+  "regressors": [],
+  "validation_mse": 12.372172931708707,
+  "saved_at": "2026-05-28T10:40:22.519167"
+}

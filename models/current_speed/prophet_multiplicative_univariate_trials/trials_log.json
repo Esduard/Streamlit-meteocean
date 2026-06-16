@@ -1,0 +1,63 @@
+{
+  "optimization_summary": {
+    "metric": "mse",
+    "n_trials": 1,
+    "best_trial": 1,
+    "best_score": 2.1289689713920934,
+    "best_raw_score": 2.1289689713920934,
+    "best_params": {
+      "changepoint_prior_scale": 0.010253509690168494,
+      "seasonality_prior_scale": 7.114476009343421,
+      "yearly_fourier_order": 15,
+      "weekly_fourier_order": 6,
+      "daily_fourier_order": 2
+    },
+    "complexity_penalty_config": {
+      "enabled": false,
+      "lambda": 0.0,
+      "weights": {
+        "yearly_fourier_order": 1.0,
+        "weekly_fourier_order": 1.0,
+        "daily_fourier_order": 1.0
+      }
+    },
+    "timestamp": "2026-05-28T10:40:22.519596"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "score": 2.1289689713920934,
+      "penalized_score": 2.1289689713920934,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.010253509690168494,
+        "seasonality_prior_scale": 7.114476009343421,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 2
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.010253509690168494,
+        "seasonality_prior_scale": 7.114476009343421,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 2
+      }
+    }
+  ]
+}

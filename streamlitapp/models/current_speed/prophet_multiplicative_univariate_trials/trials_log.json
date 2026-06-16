@@ -1,0 +1,5278 @@
+{
+  "optimization_summary": {
+    "metric": "mse",
+    "n_trials": 150,
+    "best_trial": 16,
+    "best_score": 0.10185645801225807,
+    "best_raw_score": 0.10185645801225807,
+    "best_params": {
+      "changepoint_prior_scale": 0.0012321037971630444,
+      "seasonality_prior_scale": 0.011577405991493699,
+      "yearly_fourier_order": 1,
+      "weekly_fourier_order": 4,
+      "daily_fourier_order": 9
+    },
+    "complexity_penalty_config": {
+      "enabled": false,
+      "lambda": 0.0,
+      "weights": {
+        "yearly_fourier_order": 1.0,
+        "weekly_fourier_order": 1.0,
+        "daily_fourier_order": 1.0
+      }
+    },
+    "timestamp": "2026-05-09T09:03:35.328180"
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "score": 1.349150050687961,
+      "penalized_score": 1.349150050687961,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.010253509690168494,
+        "seasonality_prior_scale": 7.114476009343421,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.010253509690168494,
+        "seasonality_prior_scale": 7.114476009343421,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 2,
+      "score": 0.42079555316410244,
+      "penalized_score": 0.42079555316410244,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0026364803038431655,
+        "seasonality_prior_scale": 0.014936568554617643,
+        "yearly_fourier_order": 18,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0026364803038431655,
+        "seasonality_prior_scale": 0.014936568554617643,
+        "yearly_fourier_order": 18,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 3,
+      "score": 0.6104378682056534,
+      "penalized_score": 0.6104378682056534,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001136467270001117,
+        "seasonality_prior_scale": 8.123245085588687,
+        "yearly_fourier_order": 17,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001136467270001117,
+        "seasonality_prior_scale": 8.123245085588687,
+        "yearly_fourier_order": 17,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 4,
+      "score": 0.4626584652786832,
+      "penalized_score": 0.4626584652786832,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0031261029103110596,
+        "seasonality_prior_scale": 0.08179499475211674,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 12,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0031261029103110596,
+        "seasonality_prior_scale": 0.08179499475211674,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 12,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 5,
+      "score": 0.5583206833924995,
+      "penalized_score": 0.5583206833924995,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.044809759182149515,
+        "seasonality_prior_scale": 0.02621087878265441,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.044809759182149515,
+        "seasonality_prior_scale": 0.02621087878265441,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 6,
+      "score": 0.4679914116236124,
+      "penalized_score": 0.4679914116236124,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.13157287601765633,
+        "seasonality_prior_scale": 0.039721107273819126,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 3
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.13157287601765633,
+        "seasonality_prior_scale": 0.039721107273819126,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 3
+      }
+    },
+    {
+      "trial": 7,
+      "score": 0.18689965626793564,
+      "penalized_score": 0.18689965626793564,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.04362599362560559,
+        "seasonality_prior_scale": 0.03247673570627449,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 24,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.04362599362560559,
+        "seasonality_prior_scale": 0.03247673570627449,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 24,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 8,
+      "score": 0.44671378711585275,
+      "penalized_score": 0.44671378711585275,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.15199881220083966,
+        "seasonality_prior_scale": 0.08200518402245831,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 18,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.15199881220083966,
+        "seasonality_prior_scale": 0.08200518402245831,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 18,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 9,
+      "score": 0.12534817251041536,
+      "penalized_score": 0.12534817251041536,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0021348999901951954,
+        "seasonality_prior_scale": 0.3058656666978526,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 23,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0021348999901951954,
+        "seasonality_prior_scale": 0.3058656666978526,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 23,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 10,
+      "score": 0.4830250491152775,
+      "penalized_score": 0.4830250491152775,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.06139426050898151,
+        "seasonality_prior_scale": 0.08612579192594885,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 15,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.06139426050898151,
+        "seasonality_prior_scale": 0.08612579192594885,
+        "yearly_fourier_order": 11,
+        "weekly_fourier_order": 15,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 11,
+      "score": 0.842334782776948,
+      "penalized_score": 0.842334782776948,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.010253463614483664,
+        "seasonality_prior_scale": 1.2351375553637307,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 24,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.010253463614483664,
+        "seasonality_prior_scale": 1.2351375553637307,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 24,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 12,
+      "score": 0.19652040973304277,
+      "penalized_score": 0.19652040973304277,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.016284818629472186,
+        "seasonality_prior_scale": 0.4564244374258123,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 25,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.016284818629472186,
+        "seasonality_prior_scale": 0.4564244374258123,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 25,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 13,
+      "score": 0.45004660025918175,
+      "penalized_score": 0.45004660025918175,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.408650292851297,
+        "seasonality_prior_scale": 0.47377723860348275,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 22,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.408650292851297,
+        "seasonality_prior_scale": 0.47377723860348275,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 22,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 14,
+      "score": 0.3753659709734034,
+      "penalized_score": 0.3753659709734034,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.004445621733482108,
+        "seasonality_prior_scale": 2.000635184042569,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 21,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.004445621733482108,
+        "seasonality_prior_scale": 2.000635184042569,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 21,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 15,
+      "score": 0.4527652308779773,
+      "penalized_score": 0.4527652308779773,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.03309581417202432,
+        "seasonality_prior_scale": 0.2203891031436173,
+        "yearly_fourier_order": 7,
+        "weekly_fourier_order": 20,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.03309581417202432,
+        "seasonality_prior_scale": 0.2203891031436173,
+        "yearly_fourier_order": 7,
+        "weekly_fourier_order": 20,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 16,
+      "score": 0.10185645801225807,
+      "penalized_score": 0.10185645801225807,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012321037971630444,
+        "seasonality_prior_scale": 0.011577405991493699,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012321037971630444,
+        "seasonality_prior_scale": 0.011577405991493699,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 17,
+      "score": 0.14255719984178455,
+      "penalized_score": 0.14255719984178455,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00101259497899442,
+        "seasonality_prior_scale": 0.010314427573969264,
+        "yearly_fourier_order": 9,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00101259497899442,
+        "seasonality_prior_scale": 0.010314427573969264,
+        "yearly_fourier_order": 9,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 18,
+      "score": 0.13005179584792265,
+      "penalized_score": 0.13005179584792265,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0020054885231551196,
+        "seasonality_prior_scale": 1.7728878395197547,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0020054885231551196,
+        "seasonality_prior_scale": 1.7728878395197547,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 19,
+      "score": 0.6544810607443066,
+      "penalized_score": 0.6544810607443066,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.006947803572450892,
+        "seasonality_prior_scale": 0.18555655791163136,
+        "yearly_fourier_order": 8,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.006947803572450892,
+        "seasonality_prior_scale": 0.18555655791163136,
+        "yearly_fourier_order": 8,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 20,
+      "score": 2.140083739705893,
+      "penalized_score": 2.140083739705893,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0017588466893393828,
+        "seasonality_prior_scale": 0.8475197312385592,
+        "yearly_fourier_order": 20,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0017588466893393828,
+        "seasonality_prior_scale": 0.8475197312385592,
+        "yearly_fourier_order": 20,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 21,
+      "score": 0.5762573874015734,
+      "penalized_score": 0.5762573874015734,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.005111164763909068,
+        "seasonality_prior_scale": 3.879555467818435,
+        "yearly_fourier_order": 14,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.005111164763909068,
+        "seasonality_prior_scale": 3.879555467818435,
+        "yearly_fourier_order": 14,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 22,
+      "score": 0.12990454717114958,
+      "penalized_score": 0.12990454717114958,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0019348556153185904,
+        "seasonality_prior_scale": 2.076624484087352,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0019348556153185904,
+        "seasonality_prior_scale": 2.076624484087352,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 23,
+      "score": 0.11173763964608281,
+      "penalized_score": 0.11173763964608281,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014883914835915905,
+        "seasonality_prior_scale": 2.7636599699960818,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014883914835915905,
+        "seasonality_prior_scale": 2.7636599699960818,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 24,
+      "score": 0.10782627158233157,
+      "penalized_score": 0.10782627158233157,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010457127949211032,
+        "seasonality_prior_scale": 3.397935700926487,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010457127949211032,
+        "seasonality_prior_scale": 3.397935700926487,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 25,
+      "score": 0.10728507647301366,
+      "penalized_score": 0.10728507647301366,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011835861683466792,
+        "seasonality_prior_scale": 3.7461949777203887,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011835861683466792,
+        "seasonality_prior_scale": 3.7461949777203887,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 26,
+      "score": 0.11978791008763576,
+      "penalized_score": 0.11978791008763576,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010024282425505511,
+        "seasonality_prior_scale": 4.482683449275055,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010024282425505511,
+        "seasonality_prior_scale": 4.482683449275055,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 27,
+      "score": 0.38305652969463244,
+      "penalized_score": 0.38305652969463244,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.003828192828889148,
+        "seasonality_prior_scale": 1.107799050114267,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.003828192828889148,
+        "seasonality_prior_scale": 1.107799050114267,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 28,
+      "score": 0.5434244290279615,
+      "penalized_score": 0.5434244290279615,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00788634657278994,
+        "seasonality_prior_scale": 9.459554928592677,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00788634657278994,
+        "seasonality_prior_scale": 9.459554928592677,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 29,
+      "score": 0.19601775963629323,
+      "penalized_score": 0.19601775963629323,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.015853696917463994,
+        "seasonality_prior_scale": 0.680780129978837,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.015853696917463994,
+        "seasonality_prior_scale": 0.680780129978837,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 30,
+      "score": 0.5492648119362122,
+      "penalized_score": 0.5492648119362122,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00327081360594324,
+        "seasonality_prior_scale": 5.512916559158287,
+        "yearly_fourier_order": 9,
+        "weekly_fourier_order": 13,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00327081360594324,
+        "seasonality_prior_scale": 5.512916559158287,
+        "yearly_fourier_order": 9,
+        "weekly_fourier_order": 13,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 31,
+      "score": 0.17717130281099075,
+      "penalized_score": 0.17717130281099075,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013345010692312974,
+        "seasonality_prior_scale": 3.3098769585513463,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013345010692312974,
+        "seasonality_prior_scale": 3.3098769585513463,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 32,
+      "score": 0.11088452092592016,
+      "penalized_score": 0.11088452092592016,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014807409414293083,
+        "seasonality_prior_scale": 2.950574462672636,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014807409414293083,
+        "seasonality_prior_scale": 2.950574462672636,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 33,
+      "score": 0.15370490422569244,
+      "penalized_score": 0.15370490422569244,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002530005180107463,
+        "seasonality_prior_scale": 1.3203378386014029,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002530005180107463,
+        "seasonality_prior_scale": 1.3203378386014029,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 34,
+      "score": 0.1366343760206235,
+      "penalized_score": 0.1366343760206235,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014617657148206541,
+        "seasonality_prior_scale": 6.227693309598524,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014617657148206541,
+        "seasonality_prior_scale": 6.227693309598524,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 35,
+      "score": 0.7750042812341269,
+      "penalized_score": 0.7750042812341269,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0029958928769442256,
+        "seasonality_prior_scale": 2.676387875152729,
+        "yearly_fourier_order": 13,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0029958928769442256,
+        "seasonality_prior_scale": 2.676387875152729,
+        "yearly_fourier_order": 13,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 36,
+      "score": 0.1853594936286857,
+      "penalized_score": 0.1853594936286857,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0054031023511847045,
+        "seasonality_prior_scale": 8.953855928710452,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0054031023511847045,
+        "seasonality_prior_scale": 8.953855928710452,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 37,
+      "score": 0.18588208693745528,
+      "penalized_score": 0.18588208693745528,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013321226354161522,
+        "seasonality_prior_scale": 4.9869847817998485,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013321226354161522,
+        "seasonality_prior_scale": 4.9869847817998485,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 38,
+      "score": 0.31725673623424083,
+      "penalized_score": 0.31725673623424083,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010374513301900814,
+        "seasonality_prior_scale": 0.01896728744720175,
+        "yearly_fourier_order": 16,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010374513301900814,
+        "seasonality_prior_scale": 0.01896728744720175,
+        "yearly_fourier_order": 16,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 39,
+      "score": 0.1227406686765558,
+      "penalized_score": 0.1227406686765558,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0024271803815963345,
+        "seasonality_prior_scale": 0.04807743149803899,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0024271803815963345,
+        "seasonality_prior_scale": 0.04807743149803899,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 40,
+      "score": 0.16658067824374437,
+      "penalized_score": 0.16658067824374437,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0016714392006269216,
+        "seasonality_prior_scale": 0.14539571022667708,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0016714392006269216,
+        "seasonality_prior_scale": 0.14539571022667708,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 41,
+      "score": 0.21167790879004889,
+      "penalized_score": 0.21167790879004889,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0029896609007985827,
+        "seasonality_prior_scale": 6.822539073670218,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0029896609007985827,
+        "seasonality_prior_scale": 6.822539073670218,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 42,
+      "score": 0.11195032872390424,
+      "penalized_score": 0.11195032872390424,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001559652422460098,
+        "seasonality_prior_scale": 3.1510318952333023,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001559652422460098,
+        "seasonality_prior_scale": 3.1510318952333023,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 43,
+      "score": 0.11149521924405906,
+      "penalized_score": 0.11149521924405906,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013883023014252714,
+        "seasonality_prior_scale": 2.4199102533612855,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013883023014252714,
+        "seasonality_prior_scale": 2.4199102533612855,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 44,
+      "score": 0.17162161210685506,
+      "penalized_score": 0.17162161210685506,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002242699997252867,
+        "seasonality_prior_scale": 1.5970199948229047,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002242699997252867,
+        "seasonality_prior_scale": 1.5970199948229047,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 45,
+      "score": 0.11755088570459064,
+      "penalized_score": 0.11755088570459064,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012493147954033528,
+        "seasonality_prior_scale": 0.8696701945591531,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012493147954033528,
+        "seasonality_prior_scale": 0.8696701945591531,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 46,
+      "score": 0.16746097810647054,
+      "penalized_score": 0.16746097810647054,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0019422030758358326,
+        "seasonality_prior_scale": 2.5847725324052235,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0019422030758358326,
+        "seasonality_prior_scale": 2.5847725324052235,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 47,
+      "score": 0.16844185813439697,
+      "penalized_score": 0.16844185813439697,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0035351275649296364,
+        "seasonality_prior_scale": 4.075892013008435,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 17,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0035351275649296364,
+        "seasonality_prior_scale": 4.075892013008435,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 17,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 48,
+      "score": 0.2998233798957532,
+      "penalized_score": 0.2998233798957532,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.16363203256690514,
+        "seasonality_prior_scale": 0.4861504442368095,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.16363203256690514,
+        "seasonality_prior_scale": 0.4861504442368095,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 49,
+      "score": 0.7037724393873612,
+      "penalized_score": 0.7037724393873612,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.08974836346897905,
+        "seasonality_prior_scale": 6.581571392991831,
+        "yearly_fourier_order": 12,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.08974836346897905,
+        "seasonality_prior_scale": 6.581571392991831,
+        "yearly_fourier_order": 12,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 50,
+      "score": 0.1598369192107249,
+      "penalized_score": 0.1598369192107249,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010094380475272895,
+        "seasonality_prior_scale": 1.957882864775143,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010094380475272895,
+        "seasonality_prior_scale": 1.957882864775143,
+        "yearly_fourier_order": 6,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 51,
+      "score": 0.3727065354037799,
+      "penalized_score": 0.3727065354037799,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.3274539396191042,
+        "seasonality_prior_scale": 0.3341444130709556,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 14,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.3274539396191042,
+        "seasonality_prior_scale": 0.3341444130709556,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 14,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 52,
+      "score": 0.10888471549710414,
+      "penalized_score": 0.10888471549710414,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014501110907111227,
+        "seasonality_prior_scale": 2.5803148450505455,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014501110907111227,
+        "seasonality_prior_scale": 2.5803148450505455,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 53,
+      "score": 0.10856497740160924,
+      "penalized_score": 0.10856497740160924,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012533275123276747,
+        "seasonality_prior_scale": 1.4862107402236067,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 3
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012533275123276747,
+        "seasonality_prior_scale": 1.4862107402236067,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 3
+      }
+    },
+    {
+      "trial": 54,
+      "score": 0.16308630105382754,
+      "penalized_score": 0.16308630105382754,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0022538962191408474,
+        "seasonality_prior_scale": 1.407227829252951,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 3
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0022538962191408474,
+        "seasonality_prior_scale": 1.407227829252951,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 3
+      }
+    },
+    {
+      "trial": 55,
+      "score": 0.10930454806649392,
+      "penalized_score": 0.10930454806649392,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012190295243657563,
+        "seasonality_prior_scale": 3.514412220785903,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012190295243657563,
+        "seasonality_prior_scale": 3.514412220785903,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 56,
+      "score": 0.1232405872359891,
+      "penalized_score": 0.1232405872359891,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011503421040497037,
+        "seasonality_prior_scale": 1.0083877373544397,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011503421040497037,
+        "seasonality_prior_scale": 1.0083877373544397,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 57,
+      "score": 0.1296911647716324,
+      "penalized_score": 0.1296911647716324,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0018296369326529,
+        "seasonality_prior_scale": 4.159135031478272,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0018296369326529,
+        "seasonality_prior_scale": 4.159135031478272,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 58,
+      "score": 0.11854316048472395,
+      "penalized_score": 0.11854316048472395,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011857133754883521,
+        "seasonality_prior_scale": 0.06955656388837426,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 3
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011857133754883521,
+        "seasonality_prior_scale": 0.06955656388837426,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 3
+      }
+    },
+    {
+      "trial": 59,
+      "score": 0.959726186154918,
+      "penalized_score": 0.959726186154918,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0025924846501998436,
+        "seasonality_prior_scale": 0.11769515602040143,
+        "yearly_fourier_order": 18,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0025924846501998436,
+        "seasonality_prior_scale": 0.11769515602040143,
+        "yearly_fourier_order": 18,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 60,
+      "score": 0.2601601957450813,
+      "penalized_score": 0.2601601957450813,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0039084576701167535,
+        "seasonality_prior_scale": 3.5987111646375505,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 19,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0039084576701167535,
+        "seasonality_prior_scale": 3.5987111646375505,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 19,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 61,
+      "score": 0.1997959054838642,
+      "penalized_score": 0.1997959054838642,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.025596344548623782,
+        "seasonality_prior_scale": 0.6661429094148962,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.025596344548623782,
+        "seasonality_prior_scale": 0.6661429094148962,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 62,
+      "score": 0.11589818706828839,
+      "penalized_score": 0.11589818706828839,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0016817211827951165,
+        "seasonality_prior_scale": 1.8288302269416832,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0016817211827951165,
+        "seasonality_prior_scale": 1.8288302269416832,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 63,
+      "score": 0.12035626244047329,
+      "penalized_score": 0.12035626244047329,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012498046419627583,
+        "seasonality_prior_scale": 2.359684943789022,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 3
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012498046419627583,
+        "seasonality_prior_scale": 2.359684943789022,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 3
+      }
+    },
+    {
+      "trial": 64,
+      "score": 0.11644830064975971,
+      "penalized_score": 0.11644830064975971,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0019647608906143837,
+        "seasonality_prior_scale": 4.589826442532235,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0019647608906143837,
+        "seasonality_prior_scale": 4.589826442532235,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 65,
+      "score": 0.12655425345254345,
+      "penalized_score": 0.12655425345254345,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0015021030196355762,
+        "seasonality_prior_scale": 3.133017059047585,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0015021030196355762,
+        "seasonality_prior_scale": 3.133017059047585,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 66,
+      "score": 0.11470446207936418,
+      "penalized_score": 0.11470446207936418,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010274866264940762,
+        "seasonality_prior_scale": 1.469141570400311,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010274866264940762,
+        "seasonality_prior_scale": 1.469141570400311,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 67,
+      "score": 0.1955686040243772,
+      "penalized_score": 0.1955686040243772,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.014364119977191796,
+        "seasonality_prior_scale": 5.9132628246586405,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.014364119977191796,
+        "seasonality_prior_scale": 5.9132628246586405,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 68,
+      "score": 0.1437097714124095,
+      "penalized_score": 0.1437097714124095,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.004650181921718113,
+        "seasonality_prior_scale": 0.011076483169344835,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.004650181921718113,
+        "seasonality_prior_scale": 0.011076483169344835,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 69,
+      "score": 0.20628033796962586,
+      "penalized_score": 0.20628033796962586,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0029658649037047637,
+        "seasonality_prior_scale": 7.5675572969912945,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0029658649037047637,
+        "seasonality_prior_scale": 7.5675572969912945,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 70,
+      "score": 0.354237099172147,
+      "penalized_score": 0.354237099172147,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001643771545262119,
+        "seasonality_prior_scale": 2.1619482927918865,
+        "yearly_fourier_order": 10,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 10
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001643771545262119,
+        "seasonality_prior_scale": 2.1619482927918865,
+        "yearly_fourier_order": 10,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 10
+      }
+    },
+    {
+      "trial": 71,
+      "score": 0.11863993503428738,
+      "penalized_score": 0.11863993503428738,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0023099620238406413,
+        "seasonality_prior_scale": 3.2837982326937842,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0023099620238406413,
+        "seasonality_prior_scale": 3.2837982326937842,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 72,
+      "score": 0.1081772314481612,
+      "penalized_score": 0.1081772314481612,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013915775488506001,
+        "seasonality_prior_scale": 2.5248519172612567,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013915775488506001,
+        "seasonality_prior_scale": 2.5248519172612567,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 73,
+      "score": 0.115248243200643,
+      "penalized_score": 0.115248243200643,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012475486226562955,
+        "seasonality_prior_scale": 5.191637115109691,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012475486226562955,
+        "seasonality_prior_scale": 5.191637115109691,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 74,
+      "score": 0.10331544337966343,
+      "penalized_score": 0.10331544337966343,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013947492688917474,
+        "seasonality_prior_scale": 0.02215575834523627,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013947492688917474,
+        "seasonality_prior_scale": 0.02215575834523627,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 75,
+      "score": 0.10663144848715442,
+      "penalized_score": 0.10663144848715442,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002001376910979301,
+        "seasonality_prior_scale": 0.012737532863190609,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002001376910979301,
+        "seasonality_prior_scale": 0.012737532863190609,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 76,
+      "score": 0.11073245152398233,
+      "penalized_score": 0.11073245152398233,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002018073748786698,
+        "seasonality_prior_scale": 0.02147425110736036,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002018073748786698,
+        "seasonality_prior_scale": 0.02147425110736036,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 77,
+      "score": 0.10993028031341703,
+      "penalized_score": 0.10993028031341703,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0016787435863115728,
+        "seasonality_prior_scale": 0.013428160968205314,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0016787435863115728,
+        "seasonality_prior_scale": 0.013428160968205314,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 78,
+      "score": 0.5044001241396301,
+      "penalized_score": 0.5044001241396301,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00269457371100909,
+        "seasonality_prior_scale": 0.020472414430642048,
+        "yearly_fourier_order": 20,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00269457371100909,
+        "seasonality_prior_scale": 0.020472414430642048,
+        "yearly_fourier_order": 20,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 79,
+      "score": 0.10565048534027563,
+      "penalized_score": 0.10565048534027563,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013704761544113472,
+        "seasonality_prior_scale": 0.032011363321796986,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013704761544113472,
+        "seasonality_prior_scale": 0.032011363321796986,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 80,
+      "score": 0.14805772383251709,
+      "penalized_score": 0.14805772383251709,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001044468369792413,
+        "seasonality_prior_scale": 0.029191106732657856,
+        "yearly_fourier_order": 7,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001044468369792413,
+        "seasonality_prior_scale": 0.029191106732657856,
+        "yearly_fourier_order": 7,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 81,
+      "score": 0.12281043822252624,
+      "penalized_score": 0.12281043822252624,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0018613918194225045,
+        "seasonality_prior_scale": 0.01622921162305933,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0018613918194225045,
+        "seasonality_prior_scale": 0.01622921162305933,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 82,
+      "score": 0.1047017715112156,
+      "penalized_score": 0.1047017715112156,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014150166030208573,
+        "seasonality_prior_scale": 0.012613923913552049,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014150166030208573,
+        "seasonality_prior_scale": 0.012613923913552049,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 83,
+      "score": 0.10369958824309566,
+      "penalized_score": 0.10369958824309566,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013593775545712044,
+        "seasonality_prior_scale": 0.012565288729097452,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013593775545712044,
+        "seasonality_prior_scale": 0.012565288729097452,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 84,
+      "score": 0.10462118321692382,
+      "penalized_score": 0.10462118321692382,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014645792583913946,
+        "seasonality_prior_scale": 0.012683720146097142,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014645792583913946,
+        "seasonality_prior_scale": 0.012683720146097142,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 85,
+      "score": 0.10872064358344466,
+      "penalized_score": 0.10872064358344466,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002155685545761042,
+        "seasonality_prior_scale": 0.014460570325762735,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002155685545761042,
+        "seasonality_prior_scale": 0.014460570325762735,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 86,
+      "score": 0.17967149317935177,
+      "penalized_score": 0.17967149317935177,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.04746264914762663,
+        "seasonality_prior_scale": 0.011438470118909597,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.04746264914762663,
+        "seasonality_prior_scale": 0.011438470118909597,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 87,
+      "score": 0.12868883537542286,
+      "penalized_score": 0.12868883537542286,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0016229970932776705,
+        "seasonality_prior_scale": 0.04301310842038394,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0016229970932776705,
+        "seasonality_prior_scale": 0.04301310842038394,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 88,
+      "score": 0.1261754166785628,
+      "penalized_score": 0.1261754166785628,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001104490437347557,
+        "seasonality_prior_scale": 0.023787954696293866,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001104490437347557,
+        "seasonality_prior_scale": 0.023787954696293866,
+        "yearly_fourier_order": 5,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 89,
+      "score": 0.15059556597609283,
+      "penalized_score": 0.15059556597609283,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00578356186584838,
+        "seasonality_prior_scale": 0.016365652772971456,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00578356186584838,
+        "seasonality_prior_scale": 0.016365652772971456,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 90,
+      "score": 0.10913809503407874,
+      "penalized_score": 0.10913809503407874,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001436021525263796,
+        "seasonality_prior_scale": 0.033751573105372315,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001436021525263796,
+        "seasonality_prior_scale": 0.033751573105372315,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 91,
+      "score": 0.1578213742995686,
+      "penalized_score": 0.1578213742995686,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.009780202017313848,
+        "seasonality_prior_scale": 0.012748881337649804,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 13,
+        "daily_fourier_order": 9
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.009780202017313848,
+        "seasonality_prior_scale": 0.012748881337649804,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 13,
+        "daily_fourier_order": 9
+      }
+    },
+    {
+      "trial": 92,
+      "score": 0.10438819831974402,
+      "penalized_score": 0.10438819831974402,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013883903994459962,
+        "seasonality_prior_scale": 0.017765540592519915,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013883903994459962,
+        "seasonality_prior_scale": 0.017765540592519915,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 93,
+      "score": 0.10445291690283551,
+      "penalized_score": 0.10445291690283551,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011486019319004949,
+        "seasonality_prior_scale": 0.017715768730825972,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011486019319004949,
+        "seasonality_prior_scale": 0.017715768730825972,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 94,
+      "score": 0.1062561448953564,
+      "penalized_score": 0.1062561448953564,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0017447188262307404,
+        "seasonality_prior_scale": 0.0186024324564838,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0017447188262307404,
+        "seasonality_prior_scale": 0.0186024324564838,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 95,
+      "score": 0.10597911988629831,
+      "penalized_score": 0.10597911988629831,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0019001438692446487,
+        "seasonality_prior_scale": 0.01012850230798603,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0019001438692446487,
+        "seasonality_prior_scale": 0.01012850230798603,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 96,
+      "score": 0.11886614501568508,
+      "penalized_score": 0.11886614501568508,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0026388927948991885,
+        "seasonality_prior_scale": 0.01844136429033846,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0026388927948991885,
+        "seasonality_prior_scale": 0.01844136429033846,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 97,
+      "score": 0.10549326681162814,
+      "penalized_score": 0.10549326681162814,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0017464869027336316,
+        "seasonality_prior_scale": 0.010284961161551831,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0017464869027336316,
+        "seasonality_prior_scale": 0.010284961161551831,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 98,
+      "score": 0.1257418346917491,
+      "penalized_score": 0.1257418346917491,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014244576627159829,
+        "seasonality_prior_scale": 0.025914315105913733,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014244576627159829,
+        "seasonality_prior_scale": 0.025914315105913733,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 99,
+      "score": 0.1086585343013972,
+      "penalized_score": 0.1086585343013972,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.002197087572473116,
+        "seasonality_prior_scale": 0.010194740914365005,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.002197087572473116,
+        "seasonality_prior_scale": 0.010194740914365005,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 100,
+      "score": 0.1190876300310328,
+      "penalized_score": 0.1190876300310328,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011751533454649645,
+        "seasonality_prior_scale": 0.015445937217042053,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011751533454649645,
+        "seasonality_prior_scale": 0.015445937217042053,
+        "yearly_fourier_order": 4,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 101,
+      "score": 0.1413273055041392,
+      "penalized_score": 0.1413273055041392,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0036790045138203023,
+        "seasonality_prior_scale": 0.03343761072883906,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0036790045138203023,
+        "seasonality_prior_scale": 0.03343761072883906,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 102,
+      "score": 0.1053210461035113,
+      "penalized_score": 0.1053210461035113,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001731811978805355,
+        "seasonality_prior_scale": 0.017215636860417795,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001731811978805355,
+        "seasonality_prior_scale": 0.017215636860417795,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 103,
+      "score": 0.11025473131092267,
+      "penalized_score": 0.11025473131092267,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001323259845035991,
+        "seasonality_prior_scale": 0.011701911902664869,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001323259845035991,
+        "seasonality_prior_scale": 0.011701911902664869,
+        "yearly_fourier_order": 3,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 104,
+      "score": 0.10285030541672033,
+      "penalized_score": 0.10285030541672033,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0015439676502056279,
+        "seasonality_prior_scale": 0.010174613315681853,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0015439676502056279,
+        "seasonality_prior_scale": 0.010174613315681853,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 105,
+      "score": 0.10446741139650007,
+      "penalized_score": 0.10446741139650007,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0015690810755113532,
+        "seasonality_prior_scale": 0.023727377257572204,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0015690810755113532,
+        "seasonality_prior_scale": 0.023727377257572204,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 5,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 106,
+      "score": 0.10875413843787243,
+      "penalized_score": 0.10875413843787243,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0016281715666009613,
+        "seasonality_prior_scale": 0.0226362863273989,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0016281715666009613,
+        "seasonality_prior_scale": 0.0226362863273989,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 3,
+        "daily_fourier_order": 8
+      }
+    },
+    {
+      "trial": 107,
+      "score": 0.10247186978432284,
+      "penalized_score": 0.10247186978432284,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011533455623262594,
+        "seasonality_prior_scale": 0.017553352800314847,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011533455623262594,
+        "seasonality_prior_scale": 0.017553352800314847,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 4,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 108,
+      "score": 0.10338884159888864,
+      "penalized_score": 0.10338884159888864,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011277302925572265,
+        "seasonality_prior_scale": 0.017789086855095105,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011277302925572265,
+        "seasonality_prior_scale": 0.017789086855095105,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 109,
+      "score": 0.10320598587140772,
+      "penalized_score": 0.10320598587140772,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011901275823473015,
+        "seasonality_prior_scale": 0.014233436805798754,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011901275823473015,
+        "seasonality_prior_scale": 0.014233436805798754,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 110,
+      "score": 0.10267436810827191,
+      "penalized_score": 0.10267436810827191,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001116106272824501,
+        "seasonality_prior_scale": 0.013878910239263883,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001116106272824501,
+        "seasonality_prior_scale": 0.013878910239263883,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 7
+      }
+    },
+    {
+      "trial": 111,
+      "score": 0.10456559896572708,
+      "penalized_score": 0.10456559896572708,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011491404810739755,
+        "seasonality_prior_scale": 0.054406528772915005,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011491404810739755,
+        "seasonality_prior_scale": 0.054406528772915005,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 112,
+      "score": 0.10265560132623826,
+      "penalized_score": 0.10265560132623826,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011224567251650983,
+        "seasonality_prior_scale": 0.014564919258711829,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011224567251650983,
+        "seasonality_prior_scale": 0.014564919258711829,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 6,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 113,
+      "score": 0.10283754760517347,
+      "penalized_score": 0.10283754760517347,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010277335758127502,
+        "seasonality_prior_scale": 0.014895971676461204,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010277335758127502,
+        "seasonality_prior_scale": 0.014895971676461204,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 114,
+      "score": 0.10253782133756979,
+      "penalized_score": 0.10253782133756979,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010301030633763882,
+        "seasonality_prior_scale": 0.013952256758233448,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010301030633763882,
+        "seasonality_prior_scale": 0.013952256758233448,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 115,
+      "score": 0.10244286695652907,
+      "penalized_score": 0.10244286695652907,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010478551772835343,
+        "seasonality_prior_scale": 0.014216261179454695,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010478551772835343,
+        "seasonality_prior_scale": 0.014216261179454695,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 116,
+      "score": 0.10319854879536239,
+      "penalized_score": 0.10319854879536239,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001086805093286026,
+        "seasonality_prior_scale": 0.01446753873045069,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001086805093286026,
+        "seasonality_prior_scale": 0.01446753873045069,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 117,
+      "score": 0.10314882714338243,
+      "penalized_score": 0.10314882714338243,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010012271916297576,
+        "seasonality_prior_scale": 0.014282986557264406,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010012271916297576,
+        "seasonality_prior_scale": 0.014282986557264406,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 118,
+      "score": 0.10303729519494435,
+      "penalized_score": 0.10303729519494435,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010307730319593633,
+        "seasonality_prior_scale": 0.014622008613156734,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010307730319593633,
+        "seasonality_prior_scale": 0.014622008613156734,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 119,
+      "score": 0.10297987006866223,
+      "penalized_score": 0.10297987006866223,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001033529767572208,
+        "seasonality_prior_scale": 0.014579942025483872,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001033529767572208,
+        "seasonality_prior_scale": 0.014579942025483872,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 120,
+      "score": 0.39816562602817995,
+      "penalized_score": 0.39816562602817995,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011452380466700329,
+        "seasonality_prior_scale": 0.014368968818451495,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011452380466700329,
+        "seasonality_prior_scale": 0.014368968818451495,
+        "yearly_fourier_order": 15,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 121,
+      "score": 0.10433466173297594,
+      "penalized_score": 0.10433466173297594,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00101860361861003,
+        "seasonality_prior_scale": 0.027213389874543612,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00101860361861003,
+        "seasonality_prior_scale": 0.027213389874543612,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 122,
+      "score": 0.10334161442465432,
+      "penalized_score": 0.10334161442465432,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010040499168951088,
+        "seasonality_prior_scale": 0.014398279590738392,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010040499168951088,
+        "seasonality_prior_scale": 0.014398279590738392,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 123,
+      "score": 0.10329828472257625,
+      "penalized_score": 0.10329828472257625,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012319550365978967,
+        "seasonality_prior_scale": 0.015071605897835568,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012319550365978967,
+        "seasonality_prior_scale": 0.015071605897835568,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 124,
+      "score": 0.10439965396734456,
+      "penalized_score": 0.10439965396734456,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010404149387892136,
+        "seasonality_prior_scale": 0.020303864529973275,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010404149387892136,
+        "seasonality_prior_scale": 0.020303864529973275,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 11,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 125,
+      "score": 0.10348759216787043,
+      "penalized_score": 0.10348759216787043,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012422537687568538,
+        "seasonality_prior_scale": 0.01132837249404054,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012422537687568538,
+        "seasonality_prior_scale": 0.01132837249404054,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 9,
+        "daily_fourier_order": 6
+      }
+    },
+    {
+      "trial": 126,
+      "score": 0.10254583589414376,
+      "penalized_score": 0.10254583589414376,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001005144189185898,
+        "seasonality_prior_scale": 0.014483136961459296,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001005144189185898,
+        "seasonality_prior_scale": 0.014483136961459296,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 127,
+      "score": 0.10219740772427768,
+      "penalized_score": 0.10219740772427768,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001013745552979613,
+        "seasonality_prior_scale": 0.015371633885356444,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001013745552979613,
+        "seasonality_prior_scale": 0.015371633885356444,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 128,
+      "score": 0.10260149354437828,
+      "penalized_score": 0.10260149354437828,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010036155266682175,
+        "seasonality_prior_scale": 0.020571350259972407,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010036155266682175,
+        "seasonality_prior_scale": 0.020571350259972407,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 129,
+      "score": 0.10277765652361728,
+      "penalized_score": 0.10277765652361728,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010048311923457095,
+        "seasonality_prior_scale": 0.019399148957225238,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010048311923457095,
+        "seasonality_prior_scale": 0.019399148957225238,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 130,
+      "score": 0.1058422436186037,
+      "penalized_score": 0.1058422436186037,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012964559633408764,
+        "seasonality_prior_scale": 0.020772257470102556,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012964559633408764,
+        "seasonality_prior_scale": 0.020772257470102556,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 131,
+      "score": 0.1035716707273107,
+      "penalized_score": 0.1035716707273107,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001249605342834294,
+        "seasonality_prior_scale": 0.025112755612676185,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001249605342834294,
+        "seasonality_prior_scale": 0.025112755612676185,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 132,
+      "score": 0.10226023581708754,
+      "penalized_score": 0.10226023581708754,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010017220355670652,
+        "seasonality_prior_scale": 0.011620391330041039,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010017220355670652,
+        "seasonality_prior_scale": 0.011620391330041039,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 133,
+      "score": 0.10248838671879619,
+      "penalized_score": 0.10248838671879619,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011379712461721293,
+        "seasonality_prior_scale": 0.011636077325520435,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011379712461721293,
+        "seasonality_prior_scale": 0.011636077325520435,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 134,
+      "score": 0.10488088757413061,
+      "penalized_score": 0.10488088757413061,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0015234313053184131,
+        "seasonality_prior_scale": 0.011542167126423333,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0015234313053184131,
+        "seasonality_prior_scale": 0.011542167126423333,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 135,
+      "score": 0.10295050269225729,
+      "penalized_score": 0.10295050269225729,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011641442389395736,
+        "seasonality_prior_scale": 0.01653211140062317,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011641442389395736,
+        "seasonality_prior_scale": 0.01653211140062317,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 136,
+      "score": 0.10287928774251201,
+      "penalized_score": 0.10287928774251201,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0012945253962946945,
+        "seasonality_prior_scale": 0.011504368039913705,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0012945253962946945,
+        "seasonality_prior_scale": 0.011504368039913705,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 137,
+      "score": 0.1872872330339823,
+      "penalized_score": 0.1872872330339823,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.2156432335002988,
+        "seasonality_prior_scale": 0.010080517207752758,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.2156432335002988,
+        "seasonality_prior_scale": 0.010080517207752758,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 10,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 138,
+      "score": 0.10377590347094594,
+      "penalized_score": 0.10377590347094594,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010010116707979343,
+        "seasonality_prior_scale": 0.020418820515843702,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010010116707979343,
+        "seasonality_prior_scale": 0.020418820515843702,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 139,
+      "score": 0.18356253845556772,
+      "penalized_score": 0.18356253845556772,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.09226995271324458,
+        "seasonality_prior_scale": 0.012054689544745756,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.09226995271324458,
+        "seasonality_prior_scale": 0.012054689544745756,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 140,
+      "score": 0.10437179293022607,
+      "penalized_score": 0.10437179293022607,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0014841440765443975,
+        "seasonality_prior_scale": 0.016310482327359786,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0014841440765443975,
+        "seasonality_prior_scale": 0.016310482327359786,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 141,
+      "score": 0.10385381182694475,
+      "penalized_score": 0.10385381182694475,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011627512396128628,
+        "seasonality_prior_scale": 0.01284975282206719,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 12,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011627512396128628,
+        "seasonality_prior_scale": 0.01284975282206719,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 12,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 142,
+      "score": 0.10333077312026595,
+      "penalized_score": 0.10333077312026595,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013018619972534739,
+        "seasonality_prior_scale": 0.011416693204109414,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013018619972534739,
+        "seasonality_prior_scale": 0.011416693204109414,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 143,
+      "score": 0.10550120744885254,
+      "penalized_score": 0.10550120744885254,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0013025384336534452,
+        "seasonality_prior_scale": 0.018744443867964516,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0013025384336534452,
+        "seasonality_prior_scale": 0.018744443867964516,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 144,
+      "score": 0.10355223282452805,
+      "penalized_score": 0.10355223282452805,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.00155550432092225,
+        "seasonality_prior_scale": 0.010042036060475169,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.00155550432092225,
+        "seasonality_prior_scale": 0.010042036060475169,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 7,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 145,
+      "score": 0.20099793465618698,
+      "penalized_score": 0.20099793465618698,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001146393200601138,
+        "seasonality_prior_scale": 0.012876246912299126,
+        "yearly_fourier_order": 12,
+        "weekly_fourier_order": 22,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001146393200601138,
+        "seasonality_prior_scale": 0.012876246912299126,
+        "yearly_fourier_order": 12,
+        "weekly_fourier_order": 22,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 146,
+      "score": 0.10750064347415422,
+      "penalized_score": 0.10750064347415422,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.001354768510839824,
+        "seasonality_prior_scale": 0.029567265825995795,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 4
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.001354768510839824,
+        "seasonality_prior_scale": 0.029567265825995795,
+        "yearly_fourier_order": 2,
+        "weekly_fourier_order": 16,
+        "daily_fourier_order": 4
+      }
+    },
+    {
+      "trial": 147,
+      "score": 0.10279942895864806,
+      "penalized_score": 0.10279942895864806,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011321377404055388,
+        "seasonality_prior_scale": 0.016464137638596037,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011321377404055388,
+        "seasonality_prior_scale": 0.016464137638596037,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 148,
+      "score": 0.10248679648733605,
+      "penalized_score": 0.10248679648733605,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011280058394988366,
+        "seasonality_prior_scale": 0.016829071636126857,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011280058394988366,
+        "seasonality_prior_scale": 0.016829071636126857,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 149,
+      "score": 0.10283148615306677,
+      "penalized_score": 0.10283148615306677,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0010004958149058048,
+        "seasonality_prior_scale": 0.01971914840937596,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0010004958149058048,
+        "seasonality_prior_scale": 0.01971914840937596,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    },
+    {
+      "trial": 150,
+      "score": 0.10350942817728462,
+      "penalized_score": 0.10350942817728462,
+      "complexity_penalty": 0.0,
+      "total_fourier_terms": 0,
+      "fourier_breakdown": {},
+      "fixed_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true
+      },
+      "sampled_params": {
+        "changepoint_prior_scale": 0.0011613427808379961,
+        "seasonality_prior_scale": 0.021902570828059287,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      },
+      "all_params": {
+        "seasonality_mode": "multiplicative",
+        "use_exogenous": false,
+        "yearly_seasonality": true,
+        "weekly_seasonality": true,
+        "daily_seasonality": true,
+        "interval_width": 0.95,
+        "changepoint_prior_scale": 0.0011613427808379961,
+        "seasonality_prior_scale": 0.021902570828059287,
+        "yearly_fourier_order": 1,
+        "weekly_fourier_order": 8,
+        "daily_fourier_order": 5
+      }
+    }
+  ]
+}
