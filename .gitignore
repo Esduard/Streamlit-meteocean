@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Testing / linting / type-check caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# PyInstaller build artifacts (MeteoceanForecast.spec)
+build/
+dist/
+
+# Logs
+logs/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+
+# Local Claude Code settings (machine-specific)
+.claude/settings.local.json
+
+# Agentic tooling local state (not project workflow files)
+.claude-flow/
