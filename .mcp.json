@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "claude-flow": {
-      "command": "npx",
+      "command": "npx.cmd",
       "args": [
         "-y",
         "ruflo@latest",

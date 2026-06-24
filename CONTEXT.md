@@ -33,3 +33,9 @@ Glossary of domain terms for the streamlit-meteocean project.
 **Executable name** — `MeteoceanForecast`. Distribution folder: `dist/MeteoceanForecast/`. Binary: `MeteoceanForecast.exe` (Windows) or `MeteoceanForecast` (Linux).
 
 **Model update** — replacing a model file in the `models/` folder with a newer trained version. The underlying mechanism is drop-in (copy files into the folder; the app reloads on next launch). In-app UX for model updates is a future feature, not part of the packaging scope. See ADR-0001.
+
+## Forecasting Data
+
+**Platform** — a single monitoring station/buoy (`plat_id` in raw uploaded XLSX files) that reports hourly meteocean readings. One uploaded XLSX file contains data for exactly one platform.
+
+**Canonical dataset** — the single, continuously-growing hourly table the app maintains from all uploaded platform files. When multiple platforms report the same hourly timestamp, their values are averaged into one row for that timestamp. This is the dataset exogenous models read at forecast time to calculate required exogenous variables — it replaces the old per-run upload-and-forecast flow.
