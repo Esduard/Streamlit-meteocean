@@ -39,3 +39,4 @@ Thumbs.db
 
 # Agentic tooling local state (not project workflow files)
 .claude-flow/
+data_csv/processed_metocean_current_data.csv
