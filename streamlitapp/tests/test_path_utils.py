@@ -59,3 +59,16 @@ def test_get_streamlit_config_dir_frozen_mode(monkeypatch):
     monkeypatch.setattr(path_utils.sys, "executable", "/opt/MeteoceanForecast/MeteoceanForecast")
 
     assert path_utils.get_streamlit_config_dir() == Path("/opt/MeteoceanForecast/.streamlit")
+
+
+def test_get_app_data_dir_source_mode(monkeypatch):
+    monkeypatch.setattr(path_utils.sys, "frozen", False, raising=False)
+
+    assert path_utils.get_app_data_dir() == _EXPECTED_SOURCE_BASE / "app_data"
+
+
+def test_get_app_data_dir_frozen_mode(monkeypatch):
+    monkeypatch.setattr(path_utils.sys, "frozen", True, raising=False)
+    monkeypatch.setattr(path_utils.sys, "executable", "/opt/MeteoceanForecast/MeteoceanForecast")
+
+    assert path_utils.get_app_data_dir() == Path("/opt/MeteoceanForecast/app_data")

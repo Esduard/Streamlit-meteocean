@@ -56,12 +56,44 @@ _RENAME_MAP: dict[str, str] = {
     "sw_cur_spd (vel. Corrente)": "sw_cur_spd",
 }
 
+# Real platform exports prefix the data with an extra metadata row (e.g. a
+# "depth"/"single_level" classification row) above the real header row, and
+# label the first column "variable" instead of "time" on that header row.
+# Header row 0 covers ordinary uploads; header row 1 covers that export shape.
+_HEADER_ROW_CANDIDATES: tuple[int, ...] = (0, 1)
+
+
+def _normalised_row(values: list) -> list[str]:
+    row = [_RENAME_MAP.get(str(v), str(v)) for v in values]
+    if row and row[0].strip().lower() == "variable":
+        row[0] = "time"
+    return row
+
+
+def _detect_header_row(path: Path | str | IO) -> int:
+    """Peek a few rows (cheap) to pick the header row, instead of reading the
+    whole sheet once per candidate (expensive for real ~90k-row exports)."""
+    if hasattr(path, "seek"):
+        path.seek(0)
+    peek = pd.read_excel(
+        path, engine="openpyxl", header=None, nrows=max(_HEADER_ROW_CANDIDATES) + 1
+    )
+    for header_row in _HEADER_ROW_CANDIDATES:
+        if header_row >= len(peek):
+            continue
+        if set(EXPECTED_COLUMNS).issubset(_normalised_row(list(peek.iloc[header_row]))):
+            return header_row
+    return _HEADER_ROW_CANDIDATES[0]
+
 
 def read_raw_xlsx(path: Path | str | IO) -> pd.DataFrame:
-    df = pd.read_excel(path, engine="openpyxl")
-
-    # Normalise long column names (idempotent if already short).
+    header_row = _detect_header_row(path)
+    if hasattr(path, "seek"):
+        path.seek(0)
+    df = pd.read_excel(path, engine="openpyxl", header=header_row)
     df = df.rename(columns=_RENAME_MAP, errors="ignore")
+    if "time" not in df.columns and str(df.columns[0]).strip().lower() == "variable":
+        df = df.rename(columns={df.columns[0]: "time"})
 
     missing = [c for c in EXPECTED_COLUMNS if c not in df.columns]
     if missing:

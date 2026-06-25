@@ -33,3 +33,7 @@ def get_logs_dir() -> Path:
 
 def get_streamlit_config_dir() -> Path:
     return get_base_dir() / ".streamlit"
+
+
+def get_app_data_dir() -> Path:
+    return get_base_dir() / "app_data"

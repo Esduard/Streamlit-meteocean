@@ -35,17 +35,28 @@ The Data Upload page:
 
 ## Acceptance criteria
 
-- [ ] `get_app_data_dir()` exists and resolves a writable directory portable across dev mode and the frozen executable.
-- [ ] `UploadedDataStore.ingest_files()` accepts one or more files, validates each via `read_raw_xlsx()`, and rejects any file with more than one distinct `plat_id` (with a clear error, no partial merge).
-- [ ] Ingesting a single file populates the staging table, canonical dataset, and upload log correctly.
-- [ ] Ingesting multiple files in one call (different platforms, overlapping hours) produces correctly averaged canonical rows for the overlapping hours.
-- [ ] Ingesting a platform's data for an hour already covered by a different platform, in a separate later call, recomputes the canonical average correctly across both platforms (not a blend of the new value with the old average).
-- [ ] Re-ingesting the same platform's data for an hour it already covered overwrites that platform's prior contribution (last-write-wins), not duplicates it.
-- [ ] State persists correctly across two separate `UploadedDataStore` instances pointed at the same directory (simulating an app restart).
-- [ ] Original uploaded file content is never written to disk — only the upload log entry survives.
-- [ ] The Data Upload page accepts multiple files at once, surfaces validation errors clearly, and shows the canonical dataset's latest timestamp after a successful upload.
-- [ ] Unsupported file types are rejected with a user-friendly message.
+- [x] `get_app_data_dir()` exists and resolves a writable directory portable across dev mode and the frozen executable.
+- [x] `UploadedDataStore.ingest_files()` accepts one or more files, validates each via `read_raw_xlsx()`, and rejects any file with more than one distinct `plat_id` (with a clear error, no partial merge).
+- [x] Ingesting a single file populates the staging table, canonical dataset, and upload log correctly.
+- [x] Ingesting multiple files in one call (different platforms, overlapping hours) produces correctly averaged canonical rows for the overlapping hours.
+- [x] Ingesting a platform's data for an hour already covered by a different platform, in a separate later call, recomputes the canonical average correctly across both platforms (not a blend of the new value with the old average).
+- [x] Re-ingesting the same platform's data for an hour it already covered overwrites that platform's prior contribution (last-write-wins), not duplicates it.
+- [x] State persists correctly across two separate `UploadedDataStore` instances pointed at the same directory (simulating an app restart).
+- [x] Original uploaded file content is never written to disk — only the upload log entry survives.
+- [x] The Data Upload page accepts multiple files at once, surfaces validation errors clearly, and shows the canonical dataset's latest timestamp after a successful upload.
+- [x] Unsupported file types are rejected with a user-friendly message.
 
 ## Blocked by
 
 None - can start immediately
+
+## Comments
+
+**2026-06-24 — Implemented.**
+
+- `get_app_data_dir()` added to `path_utils.py` (mirrors `get_models_dir()` / `get_logs_dir()`), with tests in `test_path_utils.py`.
+- `UploadedDataStore` (+ `UploadLogEntry`, `RejectedFile`, `IngestResult`) added in new `meteocean_forecast/data/uploaded_data_store.py`. Staging table and canonical dataset persisted as Parquet (added `pyarrow` to `requirements.txt`); upload log as JSON. Reuses `read_raw_xlsx()` unchanged for schema/timestamp validation; adds single-`plat_id`-per-file and `.xlsx`-extension checks on top.
+- New page `app/pages/4_Data_Upload.py`: multi-file uploader, per-file accept/reject feedback, latest-timestamp display.
+- Tests: `tests/test_uploaded_data_store.py` (12 tests) cover every acceptance criterion above, including the late-arrival recompute correctness case and the mixed-platform/unsupported-type rejections. Full suite: 68 passed. `ruff check` clean.
+- Verified the page renders with no exceptions via `streamlit.testing.v1.AppTest` (initial state: title, "No data has been uploaded yet" caption, no Process button until files chosen), and booted the real `streamlit run` server — root page and `/Data_Upload` route both returned HTTP 200 with no errors in the server log.
+- Note: `streamlit.testing.v1.AppTest` cannot simulate actual `st.file_uploader` file injection (no setter exists on that widget in AppTest), and no browser-automation tool (`chromium-cli`, Playwright) was available in this environment — so the upload *interaction* itself wasn't driven through a real browser. The underlying ingestion behavior the page delegates to is fully covered by the `UploadedDataStore` unit tests instead.

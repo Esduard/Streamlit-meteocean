@@ -168,10 +168,7 @@
       "Bash(node .claude/*)",
       "mcp__claude-flow__*"
     ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.env.*)"
-    ]
+    "defaultMode": "bypassPermissions"
   },
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",

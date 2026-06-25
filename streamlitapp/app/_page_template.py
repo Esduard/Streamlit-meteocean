@@ -7,14 +7,14 @@ All inference is delegated to ForecastingService — no Prophet imports here.
 
 from __future__ import annotations
 
-import io
-
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+from meteocean_forecast import path_utils
+from meteocean_forecast.data.uploaded_data_store import UploadedDataStore
 from meteocean_forecast.domain.forecast_request import ForecastRequest, HorizonValidationError
-from meteocean_forecast.features.raw_xlsx_reader import read_raw_xlsx
+from meteocean_forecast.domain.freshness import render_data_freshness_warning
 from meteocean_forecast.inference.forecasting_service import ForecastingService
 
 _DISPLAY_NAMES = {
@@ -29,6 +29,11 @@ def _get_service() -> ForecastingService | None:
     if service is None:
         st.error("Service not initialised. Please visit the **Home** page first.")
     return service
+
+
+@st.cache_resource(show_spinner=False)
+def _get_uploaded_data_store() -> UploadedDataStore:
+    return UploadedDataStore(path_utils.get_app_data_dir())
 
 
 def _plot_forecast(df: pd.DataFrame, target_variable: str) -> None:
@@ -82,6 +87,7 @@ def render_forecast_page(target_variable: str) -> None:
 
     label = _DISPLAY_NAMES.get(target_variable, target_variable)
     st.title(f"{label} Forecast")
+    render_data_freshness_warning()
 
     models = service.get_models_for_target(target_variable)
     if not models:
@@ -104,48 +110,34 @@ def render_forecast_page(target_variable: str) -> None:
 
     feature_df: pd.DataFrame | None = None
 
-    # --- Exogenous: file upload + feature engineering ---
+    # --- Exogenous: source raw data from the canonical uploaded dataset ---
     if selected_meta.is_exogenous:
-        st.subheader("Upload meteocean data")
-        uploaded = st.file_uploader(
-            "Upload raw hourly meteocean XLSX",
-            type=["xlsx"],
-            key=f"{target_variable}_upload",
-            help="Must contain the standard 40-column meteocean schema.",
-        )
-
-        if uploaded is not None:
-            try:
-                with st.spinner("Reading XLSX…"):
-                    raw_df = read_raw_xlsx(uploaded)
-                st.success(
-                    f"Loaded {len(raw_df):,} rows. "
-                    f"Time range: {raw_df['time'].min()} → {raw_df['time'].max()}"
-                )
-                with st.spinner("Engineering features (PCA, Fourier, …)…"):
-                    feature_df = service.prepare_exogenous_features(raw_df, selected_meta)
-                st.success(f"Features ready: {len(feature_df):,} rows × {len(feature_df.columns)} columns.")
-                st.warning(
-                    "**V1 limitation:** PCA and StandardScaler are re-fitted on your uploaded "
-                    "data, not on the original training data. Forecast accuracy may differ from "
-                    "training performance if the uploaded distribution differs significantly."
-                )
-                st.session_state[f"{target_variable}_feature_df"] = feature_df
-            except Exception as exc:
-                st.error(f"Failed to process uploaded file: {exc}")
-                st.stop()
-        else:
-            # Restore from session state if user re-selects same model.
-            feature_df = st.session_state.get(f"{target_variable}_feature_df")
-            if feature_df is not None:
-                st.info(
-                    f"Using previously processed feature file ({len(feature_df):,} rows). "
-                    "Upload a new file to replace it."
-                )
-
-        if feature_df is None:
-            st.info("Please upload a raw meteocean XLSX file to continue.")
+        store = _get_uploaded_data_store()
+        latest = store.latest_canonical_timestamp()
+        if latest is None:
+            st.info(
+                "No uploaded meteocean data is available yet. Please upload data on the "
+                "**Data Upload** page before forecasting with this model."
+            )
             st.stop()
+
+        raw_df = store.load_canonical_dataset()
+        try:
+            with st.spinner("Engineering features (PCA, Fourier, …)…"):
+                feature_df = service.prepare_exogenous_features(raw_df, selected_meta)
+        except Exception as exc:
+            st.error(f"Failed to engineer features from the canonical dataset: {exc}")
+            st.stop()
+
+        st.caption(
+            f"Using canonical dataset through **{latest.strftime('%Y-%m-%d %H:%M')}** "
+            f"({len(feature_df):,} rows)."
+        )
+        st.warning(
+            "**V1 limitation:** PCA and StandardScaler are re-fitted on the canonical "
+            "dataset, not on the original training data. Forecast accuracy may differ from "
+            "training performance if the uploaded distribution differs significantly."
+        )
 
     # --- Horizon selection ---
     if selected_meta.is_exogenous:
